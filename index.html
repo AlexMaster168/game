@@ -5,9 +5,13 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/8IyCqCZDNt4.jpg">
+    <link rel="stylesheet" href="css/hover-min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
     <script src="js/script.min.js"></script>
+    <script src="js/script2.min.js"></script>
     <title>Kurbakov Studio</title>
 </head>
 <body>
@@ -19,17 +23,17 @@
                 <span></span>
                 <span></span>
             </div>
-            <nav class="header__menu menu">
-                <ul class="menu__list">
-                    <li><a href="#our-studio" class="menu__link menu__link_first">Наша студия</a></li>
-                    <li><a href="#news" class="menu__link menu__link_second">Новости</a></li>
-                    <li><a href="#" class="menu__link menu__link_third">Планы</a></li>
-                    <li><a href="#" class="menu__link  menu__link_fourth">О нас</a></li>
-                </ul>
-            </nav>
-            <div class="header__logo">
-                <h1>Kurbakov Studio</h1>
-                <img src="img/logo.png" alt="Логотип">
+            <div class="burger-menu">
+                <a href="" class="burger-menu_button">
+                    <span class="burger-menu_lines"></span>
+                </a>
+                <nav class="burger-menu_nav">
+                    <a href="#our-studio" class="burger-menu_link">Наша команда</a>
+                    <a href="#news" class="burger-menu_link">Новости</a>
+                    <a href="#" class="burger-menu_link">Планы</a>
+                    <a href="#" class="burger-menu_link">О нас</a>
+                </nav>
+                <div class="burger-menu_overlay"></div>
             </div>
         </div>
     </header>
@@ -47,10 +51,43 @@
         <h2>Новости от нашей команды</h2>
         <p class="news__first">Первая новость</p>
         <p class="news__content">В нашей команде сейчас 4 человека и<br>нам не хватает людей в команду</p>
-        <p class="news__content">Если желаешь присоединиться,<br> то переходи по ссылочке и<br>напиши в нашу группу</p>
+        <p class="news__content">Если желаешь присоединиться,<br> то переходи по ссылочке</p>
         <a id="news__a__link" target="_blank" href="https://vk.com/im?sel=c5">Наша группа в VK</a>
         <a id="news__a__link2" target="_blank" href="https://discordapp.com/invite/MtPSBk">Наша группа в discord</a>
     </div>
+    <div class="vertical-nav-holder">
+        <a href="#" class="vertical-nav-btn"><i class="fa fa-share-alt"></i></a>
+
+        <div class="vertical-nav">
+            <ul>
+                <li>
+                    <a href="mailto:email@domain.com"><i class="fa fa-envelope"></i></a>
+                </li>
+
+                <li>
+                    <a href="skype:USERNAME?chat"><i class="fa fa-skype"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.google.com/maps/place/London+Eye/@51.5027535,-0.1186538,16z/data=!4m6!1m3!3m2!1s0x487604b900d26973:0x4291f3172409ea92!2sLondon+Eye!3m1!1s0x487604b900d26973:0x4291f3172409ea92?hl=en" target="_blank"><i class="fa fa-map-marker"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com/StivaSoft" target="_blank"><i class="fa fa-facebook"></i></a>
+                </li>
+
+                <li>
+                    <a href="https://plus.google.com/u/0/+Stivasoft/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="parallax1" class="parallax-slide"></div>
+    <div class="vertical-nav-overlay"></div><!-- /.vertical-nav-overlay -->
+    <a class="button hvr-icon-up btn-top" href="#"  title="На вверх">
+        На вверх
+        <i class="fa fa-arrow-circle-o-up hvr-icon"></i>
+    </a>
 </main>
 </body>
 </html>
