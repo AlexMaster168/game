@@ -167,6 +167,7 @@ nav.header__menu a{
     position: relative;
     text-align: center;
     top: -40px;
+    height: 350px;
     background-color: lawngreen;
 }
 #news h2{
@@ -176,7 +177,7 @@ nav.header__menu a{
 #news p {
     font-size: 20px;
 }
-#news a {
+#news__a__link {
     text-decoration: none;
     color: blue;
     background-color: orange;
@@ -185,7 +186,17 @@ nav.header__menu a{
     position: relative;
     top: -10px;
     left: -15px;
-    margin-right: 8px;
+}
+#news__a__link2 {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    bottom: -5px;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px;
+    border: 5px solid green;
 }
 .news__content {
     color: red;
