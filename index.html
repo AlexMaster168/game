@@ -6,12 +6,15 @@
           content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/8IyCqCZDNt4.jpg">
+    <link rel="stylesheet" href="swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/hover-min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/059fa98d93.js" crossorigin="anonymous"></script>
     <script src="js/script.min.js"></script>
     <script src="js/script2.min.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
+    <script src="swiper/js/script.min.js"></script>
     <title>Kurbakov Studio</title>
 </head>
 <body>
@@ -30,8 +33,16 @@
                 <nav class="burger-menu_nav">
                     <a href="#our-studio" class="burger-menu_link">Наша команда</a>
                     <a href="#news" class="burger-menu_link">Новости</a>
-                    <a href="#" class="burger-menu_link">Планы</a>
-                    <a href="#" class="burger-menu_link">О нас</a>
+                    <a href="#plants" class="burger-menu_link">Планы</a>
+                    <a href="#images" class="burger-menu_link">Скины игры</a>
+                    <label class="power" >
+                        <input type="checkbox" onclick="theme()">
+                        <div>
+                            <svg viewBox="0 0 44 44">
+                                <path d="M22,6 C31,6 38,13 38,22 C38,31 31,38 22,38 C13,38 6,31 6,22 C6,13 13,6 22,6 L22,28" id="path"></path>
+                            </svg>
+                        </div>
+                    </label>
                 </nav>
                 <div class="burger-menu_overlay"></div>
             </div>
@@ -55,6 +66,22 @@
         <a id="news__a__link" target="_blank" href="https://vk.com/im?sel=c5">Наша группа в VK</a>
         <a id="news__a__link2" target="_blank" href="https://discordapp.com/invite/MtPSBk">Наша группа в discord</a>
     </div>
+    <div id="plants">
+        <h2>Наши планы</h2>
+        <p>Мы планируем до конца лета,<br>создать шутер под название чужой</p>
+        <p>Таг же наша команда планирует<br> развиваться и обучаться в процессе<br> создания игры</p>
+    </div>
+    <div id="images" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/8IyCqCZDNt4.jpg" alt="Skin"></div>
+            <div class="swiper-slide"><img src="img/8IyCqCZDNt4.jpg" alt="Skin"></div>
+            <div class="swiper-slide"><img src="img/8IyCqCZDNt4.jpg" alt="Skin"></div>
+            <div class="swiper-slide"><img src="img/8IyCqCZDNt4.jpg" alt="Skin"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
     <div class="vertical-nav-holder">
         <a href="#" class="vertical-nav-btn"><i class="fa fa-share-alt"></i></a>
 
@@ -73,7 +100,7 @@
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com/StivaSoft" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/StivaSoft" target="_blank"><i class="fa fa-facebook-square"></i></a>
                 </li>
 
                 <li>
@@ -87,6 +114,7 @@
     <a class="button hvr-icon-up btn-top" href="#"  title="На вверх">
         <i class="fa fa-arrow-circle-o-up hvr-icon"></i>
     </a>
+    <div id="lds-dual-ring"></div>
 </main>
 </body>
 </html>
